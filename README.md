@@ -1,10 +1,10 @@
 # Badminton Analysis
 
-This project focuses on displaying useful stats like player dominance and no. of stokes in each score of a badminton singles match
+This project focuses on displaying useful stats like player dominance and no. of strokes in each score of a badminton singles match.
 
 ## Assumptions
 
-As a example, a dummy data set is used for the points table and no. of strokes table which is assumed that the machine learning algorithm implemented in research paper titled "Towards Structured Analysis of Broadcast Badminton Videos" would fetch and return as csv format.
+As an example, a dummy data set is used for the points table and no. of strokes table which is assumed that the machine learning algorithm implemented in research paper titled "Towards Structured Analysis of Broadcast Badminton Videos" would fetch and return as csv format.
 Dummy data set for points table is assumed in such a way that player 1 has won both of the first two sets , hence third set have not been played by the players.
 
 ## Prerequisites
