@@ -3,6 +3,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 
 app = Flask(__name__)
+# to find dominance graph for a set and save result in static/images
 def dominance_graph(points,name):
     x=list(range(len(points)))
     y1=0
@@ -30,6 +31,7 @@ def dominance_graph(points,name):
     plt.savefig(name)
     plt.close()
     
+# to find strokes graph for a set and save result in static/images
 def strokes_graph(strokes,name):
     x=list(range(len(strokes)))
     y=list(strokes['strokes'])
@@ -38,7 +40,7 @@ def strokes_graph(strokes,name):
     plt.ylabel('No. of strokes')
     plt.savefig(name)
     plt.close()
-
+# calling function for setting both graphs 
 def set_graphs(name):
     p='./sets/{}/{}.csv'.format(name,name)
     s='./sets/{}/{}_strokes.csv'.format(name,name)
@@ -48,7 +50,7 @@ def set_graphs(name):
     strokes=pd.read_csv(s)
     dominance_graph(points,dg)
     strokes_graph(strokes,sg)
-
+# to find the result of set
 def result_setwise(name):
     p='./sets/{}/{}.csv'.format(name,name)
     points=pd.read_csv(p)
@@ -57,7 +59,7 @@ def result_setwise(name):
     else:
         winner=2
     return winner
-
+#to find the winner of game
 def winner():
     s=['set1','set2','set3']
     win1=0
