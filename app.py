@@ -42,13 +42,17 @@ def strokes_graph(strokes,name):
     plt.close()
 # calling function for setting both graphs 
 def set_graphs(name):
-    p='./sets/{}/{}.csv'.format(name,name)
-    s='./sets/{}/{}_strokes.csv'.format(name,name)
+    p='./sets/{}/{}.csv'.format(name,name) #access the csv file for points in a set
+    s='./sets/{}/{}_strokes.csv'.format(name,name)# access the csv file for strokes in a set
+    # setting saving location for graph
     dg='./static/images/{}_dominance.png'.format(name)
     sg='./static/images/{}_strokes.png'.format(name)
+    # data framesfor the csv files
     points=pd.read_csv(p)
     strokes=pd.read_csv(s)
+    #calculate dominance graph
     dominance_graph(points,dg)
+    #calculate strokes graph
     strokes_graph(strokes,sg)
 # to find the result of set
 def result_setwise(name):
