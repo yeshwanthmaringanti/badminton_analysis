@@ -4,7 +4,7 @@ This project focuses on displaying useful stats like player dominance and no. of
 
 ## Assumptions
 
-As a example, a dummy data set is used for the points table and no. of strokes table which is assumed that the machine learning algorithm implemented in reaserch paper titled "Towards Structured Analysis of Broadcast Badminton Videos" would fetch and return as csv format.
+As a example, a dummy data set is used for the points table and no. of strokes table which is assumed that the machine learning algorithm implemented in research paper titled "Towards Structured Analysis of Broadcast Badminton Videos" would fetch and return as csv format.
 
 ## Prerequisites
 
@@ -21,12 +21,12 @@ localhost:5000/home
 ```
 This URL will launch the home page and thus we can access the application for different stataistics.
 
-### Stataistics available in application
+### Statistics available in the application developed
 
 As mentioned earlier, right now application is using a dummy data set created mannually, by which the application is able to calculate set-wise analysis and result analysis.
 
 #### Set-wise analysis
-The UI of the application is kept simple and on selecting set-wise analysis you are given the winner of each set, found based on points csv file and also the dominace and no. of strokes graph, giving you a breif analysis about the game and the play.
+The UI of the application is kept simple and on selecting set-wise analysis you are given the winner of each set, found based on points csv file and also the dominace and no. of strokes graph, giving you a brief analysis about the game and the play.
 
 #### Result analysis
 It is still in development mode but currently it just shows the winner of the game.
